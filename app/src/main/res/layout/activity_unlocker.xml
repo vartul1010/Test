@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UnlockerActivity">
+
+        <ImageView
+            android:id="@+id/fingerprint_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/signin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fingerprint_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Sign-In using Fingerprint"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/instructions_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:text="Place your fingertip on the scanner to verify your identity"
+            android:textColor="#F5F5F5"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructions_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>
